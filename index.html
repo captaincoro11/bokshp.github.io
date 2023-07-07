@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+body{
+    margin: 0;
+    background-color: #000;
+   
+    
+}
+  
+
+.header{
+    height: 50vh;
+    background-image: linear-gradient(#e40e7df5,rgba(100, 5, 108, 0.885));
+    background-size:cover;
+    background-position: top;
+    position: relative;
+    
+}
+
+.book{
+
+    position:absolute;
+    height:50vh;
+    width:auto;
+    clip-path: polygon(0 0,60% 0,100% 50% ,60% 100% ,0 100%);
+     
+
+}
+.mainhead{
+    position: absolute;
+    font-size: 60px;
+    letter-spacing: 15px;
+    top:20%;
+    left: 50%;
+    font-family: 'Brush Script MT', cursive;
+    color: wheat;
+    animation: fadeIn 5s;
+    
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 40px;
+      margin-top: 110px;
+    margin-left: 500px;
+    letter-spacing: 17px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-left: 720px;
+    letter-spacing: 5px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+.navbar{
+    margin-left: 50%;
+   
+    
+}
+
+
+.a1{
+    text-decoration: none;
+    margin-left: 110px;
+    color: white
+}
+.a1:hover{
+    color:pink;
+}
+.Best{
+    color: white;
+    margin-top: 20%;
+    font-size: 20px;
+}    
+.m{
+    font-size: 60px;
+    margin-left: 28%;
+    letter-spacing: 20px; 
+    animation: fadeIn 5s;
+}
+.n{
+    letter-spacing: 10px;
+    margin-left:435px;
+}
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+.box{
+    border-radius: 20px;
+    width: 250px;
+    height: 270px;
+    margin: 140px;
+    border-block-end-style: groove;
+    border: 5px solid;
+    background-color: white;
+    
+}
+.box1{
+    border-radius: 20px;
+   width: 250px;
+   height: 270px;
+   margin: 140px;
+   border-block-end-style: groove;
+   border: 5px solid;
+   background-color: white;
+}
+
+.box3{
+    display: flex;
+   
+}
+.box2{
+    
+    width: 250px;
+    height: 270px;
+     border-radius: 20px;
+    margin: 140px;
+    border-block-end-style: groove;
+    
+    border: 2px solid grey;
+    background-color: white;
+    
+}
+.box5{
+    
+    width: 250px;
+     border-radius: 20px;
+    height: 270px;
+    margin: 140px;
+    border-block-end-style: groove;
+    
+    border: 1px solid white;
+    
+}
+.box6{
+    
+     border-radius: 20px;
+    width: 250px;
+    height: 270px;
+    margin: 140px;
+    border-block-end-style: groove;
+    
+    
+    border: 1px solid white;
+    
+}
+.box4{
+    display: flex;
+}
+.box7{
+    
+    width: 250px;
+     border-radius: 20px;
+    height: 270px;
+    margin: 140px;
+    border-block-end-style: groove;
+    
+    border: 1px solid white;
+    
+}
+.img4{
+    width: 230px;
+    margin-top: 20px;
+}
+.box:hover{
+    animation: outbox 1s;
+    height: 380px;
+    
+        
+    
+  
+    
+    
+    
+}
+.Price{
+    margin-left: 100px;
+}
+
+@keyframes outbox{
+    0%{height: 250px;}
+    100%{height:380px;}
+}
+.img5{
+    width: 130px;
+    margin-top: 15px;
+    margin-left: 45px;
+}
+.box1:hover{
+    animation: outbox 1s;
+    height: 380px;
+}
+.box2:hover{
+    animation: outbox 1s;
+    height: 380px;
+}
+.box4:hover{
+    animation: outbox 1s;
+    height: 380px;
+}
+.box5:hover{
+    animation: outbox 1s;
+    height: 380px;
+    color: white;
+}
+.box6:hover{
+    animation: outbox 1s;
+    height: 370px;
+    color: white;
+}
+.box7:hover{
+    animation: outbox 1s;
+    height: 380px;
+    color: white;
+}
+.img6{
+    width: 130px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.img7{
+    width: 130px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.img8{
+    width: 130px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+.img9{
+    width: 130px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+
+.Recommend{
+    margin-top: 200px;
+    color:peru;
+   margin-left: 30%
+}
+ .kk{
+     font-size: 50px;
+     letter-spacing: 12px;
+
+ }
+ .pk{
+      font-size: 20px;
+     letter-spacing: 7.5px;
+
+ }
+ .op{
+    color: white;
+    margin-top: 400px;
+ }
+ .Recommend button {
+  
+    padding: 6px;
+    margin-top: 8px;
+    margin-left: -3px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+  .Recommend input[type=text] {
+    
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+  }
+  .oi{
+    display: flex;
+  }
+.btn{
+    width: 90px;
+    height: 30px;
+    color: white;
+    background-color:#90EE90;
+    border: green;
+    
+}
+.btn:hover{
+    background-color: green;
+}
+.pri{
+    margin-left: 50px;
+   
+    
+}
+.pri1{
+    color: white;
+    margin-left: 50px;
+    
+}
+.review{
+    color:#FF1493;
+    font-size: 60px;
+    margin-left: 40%;
+    letter-spacing: 20px;
+   animation: jitu 20s;
+    
+    
+}
+@keyframes jitu{
+    0%{opacity:0;}
+    60%{opacity:0.6;}
+    100%{opacity:1;}
+}
+.review{
+    color:#FF1493;
+    font-size: 60px;
+    margin-left: 40%;
+    letter-spacing: 20px;
+   animation: jitu 20s;
+    
+    
+}
+@keyframes jitu{
+    0%{opacity:0;}
+    60%{opacity:0.6;}
+    100%{opacity:1;}
+}
+.review1{
+    
+    color: white;
+    border: 2px solid white;
+    height: 350px;
+    width: 750px;
+    float: left;
+}
+.head22{
+    letter-spacing: 12px;
+    margin-left: 40%;
+}
+.rara{
+    width: 250px;
+    border-radius: 50%;
+    margin-left:30%;
+
+}
+.momo{
+    display:flex;
+}
+.jojo{
+    display:flex;
+}
+.img0{
+    width:230px;
+    margin-left: 20%;
+}
+.img00{
+    margin-top: 150px;
+    width: 220px;
+    margin-left:14%; 
+
+    
+}
+.rarai{
+    width: 160px;
+    border-radius: 50%;
+    margin-left: 30%
+}
+.review2{
+    
+    color: white;
+    border: 2px solid white;
+    height: 390px;
+    width: 753px;
+    float: right;
+    margin-top: 150px;
+}
+.para{
+    letter-spacing: 3px;
+}
+.head222{
+    letter-spacing: 12px;
+    margin-left: 40%;
+}
+.ji{
+    
+    margin-top: 200px;
+    color: white;
+    font-size:36px;
+    margin-left: 35%;
+    letter-spacing: 12px;
+}
+.nono{
+    color:white;
+    margin-left: 35%;
+}
+.holu{
+    background-color: green;
+    color: white;
+    width: 80px;
+    
+}
+.holu:hover{
+    background-color: blue;
+}
+.footer{
+    color: white;
+    font-size: 40px;
+    margin-left: 30%;
+    
+    
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    margin-left: 20px;  
+  }
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+      margin-left: 120px;
+  }
+  .fa-instagram {  
+    background: #125688;  
+    color: white;  
+    margin-left: 120px;
+    
+  }
+  .ko{
+    display:flex;
+
+  }
+  .opps{
+    text-decoration: none;
+    color:white;
+      font-size: 30px;
+      background-color: red;
+      border: white;
+      float: right;
+  }
+.opps:hover{
+    background-color: blue;
+    
+}
+.loloa{
+    
+    color: white;
+    font-size: 20px;
+    margin-left: 300px;
+
+}
+.loloa:hover{
+    color: blue;
+}
+.akbar{
+    
+    color: white;
+    font-size: 20px;
+
+}
+.akbar:hover{
+    color: blue;
+}
+    </style>
+
+</head>
+
+  
+    <header class="header">
+      <Navbar class="navbar">
+        
+      
+        
+          <a href="#" class="a1">Home</a>
+          <a href="#"class="a1">Best Selling</a>
+          <a href="#"class="a1">Reviews</a>
+          <a href="#"class="a1">Recommendation</a>
+          
+        
+      </Navbar>
+        <h2 class="mainhead">
+         THE ONLY BOOK STORE YOU NEED
+        </h2>
+      
+        
+       <nav class="bookimg">
+        <img src="https://www.nobroker.in/blog/wp-content/uploads/2022/01/Bookshelf-design-1.jpg"  class="book">
+
+       </nav>
+
+      
+    </header>
+    
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h1 class="animate-charcter"> SANJAY BOOK SHOP</h1>
+      </div>
+    </div>
+  </div>
+
+  
+  <button type="button" class="glow-on-hover">
+    Best Books
+  </button>
+</div>
+<hr class="op">
+  <div class="Best">
+
+    <h1 class="m">Best Selling Books</h1>
+    <h4 class="n">This Section contains our best selling Books</h4>
+
+  </div>
+  <div class="box3">
+  <div class="box">
+    <img src="https://www.washingtonpost.com/blogs/style-blog/files/2016/02/HPCC-Book-Cover.jpg" class="img4">
+    <ul class="oi">
+    <button class="btn">Buy Now</button>
+   <p class="pri">290Rs</p>
+  </ul>
+    <div>
+      <h3>Book Description</h3>
+      <p>
+        It is a fictional book which is based on harry potter movies.
+      </p>
+    </div>
+  
+
+
+  </div>
+   <div class="box1">
+    <img src="https://anylang.net/sites/default/files/covers/harry-potter-and-order-phoenix.jpg" class="img5">
+    
+    <ul class="oi">
+      <button class="btn">Buy Now</button>
+     <p class="pri">290Rs</p>
+    </ul>
+      
+    <div>
+      <h3>Book Description</h3>
+      <p>
+        It is a fictional book which is based on harry potter movies.
+      </p>
+    </div>
+
+    
+
+
+  </div>
+  <div class="box2">
+    <img src="https://cdn.kobo.com/book-images/de74f680-18c8-4223-b0d9-6184e3b5276f/353/569/90/False/harry-potter-and-the-cursed-child-parts-one-and-two-the-official-playscript-of-the-original-west-end-production-1.jpg" class="img6">
+    <ul class="oi">
+      <button class="btn">Buy Now</button>
+     <p class="pri">290Rs</p>
+    </ul>
+      
+    <div>
+      <h3>Book Description</h3>
+      <p>
+        It is a fictional book which is based on harry potter movies.
+      </p>
+    </div>
+    
+
+
+  </div>
+  
+
+</div>
+<div class="box4">
+  <div class="box5">
+    <img src="https://images1.penguinrandomhouse.com/cover/9780735213616" class="img7">
+    <ul class="oi">
+      <button class="btn">Buy Now</button>
+     <p class="pri1">490Rs</p>
+    </ul>
+      
+    <div>
+      <h3>Book Description</h3>
+      <p>
+        It is a science book which is studied by students.
+      </p>
+    </div>
+
+
+
+  </div>
+   <div class="box6">
+    <img src="https://media.wired.com/photos/5dfc0b056abd1f00080da8ac/master/w_1600%2Cc_limit/Science_BottleLies-hc-c.jpg" class="img8">
+    <ul class="oi">
+      <button class="btn">Buy Now</button>
+      <p class="pri1">490Rs</p>
+    </ul>
+      
+    <div>
+      <h3>Book Description</h3>
+      <p>
+        It is a science book which is studied by students.
+      </p>
+    </div>
+    
+
+
+  </div>
+  <div class="box7">
+    <img src="https://media.wired.com/photos/5dfc0b15a03b9b0008afa1a0/master/w_1600%2Cc_limit/Science_books_9781328879981_hres.jpg" class="img9">
+    <ul class="oi">
+      <button class="btn">Buy Now</button>
+      <p class="pri1">490Rs</p>
+    </ul>
+      
+    <div>
+      <h3>Book Description</h3>
+      <p>
+        It is a science book which is studied by students.
+      </p>
+    </div>
+    
+    
+
+
+  </div>
+  
+
+</div>
+<hr class="op">
+<div class="Recommend">
+<h2 class="kk">Recommended Books</h2>
+<h4 class="pk">This section contains Recommended books</h4>
+<input type="text" placeholder="Search.." class="lolo">
+<button type="submit">Submit</button>
+</div>
+<div class="Recommended">
+  <div class="box3">
+    <div class="box">
+      <img src="https://www.washingtonpost.com/blogs/style-blog/files/2016/02/HPCC-Book-Cover.jpg" class="img4">
+      <ul class="oi">
+      <button class="btn">Buy Now</button>
+     <p class="pri">290Rs</p>
+    </ul>
+      <div>
+        <h3>Book Description</h3>
+        <p>
+          It is a fictional book which is based on harry potter movies.
+        </p>
+      </div>
+    
+  
+  
+    </div>
+     <div class="box1">
+      <img src="https://anylang.net/sites/default/files/covers/harry-potter-and-order-phoenix.jpg" class="img5">
+      
+      <ul class="oi">
+        <button class="btn">Buy Now</button>
+       <p class="pri">290Rs</p>
+      </ul>
+        
+      <div>
+        <h3>Book Description</h3>
+        <p>
+          It is a fictional book which is based on harry potter movies.
+        </p>
+      </div>
+  
+      
+  
+  
+    </div>
+    <div class="box2">
+      <img src="https://cdn.kobo.com/book-images/de74f680-18c8-4223-b0d9-6184e3b5276f/353/569/90/False/harry-potter-and-the-cursed-child-parts-one-and-two-the-official-playscript-of-the-original-west-end-production-1.jpg" class="img6">
+      <ul class="oi">
+        <button class="btn">Buy Now</button>
+       <p class="pri">290Rs</p>
+      </ul>
+        
+      <div>
+        <h3>Book Description</h3>
+        <p>
+          It is a fictional book which is based on harry potter movies.
+        </p>
+      </div>
+      
+  
+  
+    </div>
+    
+  
+  </div>
+  <div class="box4">
+    <div class="box5">
+      <img src="https://images1.penguinrandomhouse.com/cover/9780735213616" class="img7">
+      <ul class="oi">
+        <button class="btn">Buy Now</button>
+       <p class="pri1">490Rs</p>
+      </ul>
+        
+      <div>
+        <h3>Book Description</h3>
+        <p>
+          It is a science book which is studied by students.
+        </p>
+      </div>
+  
+  
+  
+    </div>
+     <div class="box6">
+      <img src="https://media.wired.com/photos/5dfc0b056abd1f00080da8ac/master/w_1600%2Cc_limit/Science_BottleLies-hc-c.jpg" class="img8">
+      <ul class="oi">
+        <button class="btn">Buy Now</button>
+        <p class="pri1">490Rs</p>
+      </ul>
+        
+      <div>
+        <h3>Book Description</h3>
+        <p>
+          It is a science book which is studied by students.
+        </p>
+      </div>
+      
+  
+  
+    </div>
+    <div class="box7">
+      <img src="https://media.wired.com/photos/5dfc0b15a03b9b0008afa1a0/master/w_1600%2Cc_limit/Science_books_9781328879981_hres.jpg" class="img9">
+      <ul class="oi">
+        <button class="btn">Buy Now</button>
+        <p class="pri1">490Rs</p>
+      </ul>
+        
+      <div>
+        <h3>Book Description</h3>
+        <p>
+          It is a science book which is studied by students.
+        </p>
+      </div>
+
+      
+      
+      
+  
+  
+    </div>
+
+
+
+</div>
+<hr class="op">
+
+<div>
+   
+  <h2 class="review">Reviews</h2>
+  <div class="review1">
+    <h2 class="head22">Review1</h2>
+    <img src="https://api.time.com/wp-content/uploads/2014/05/166259035.jpg" class="rara" alt="">
+   
+    <p class="para">
+      I am really satisfied with the quality and price of books and these books are available cheapest at sanjay book stall
+    </p>
+
+  </div>
+  <img src="https://images1.penguinrandomhouse.com/cover/9780735213616" class="img0">
+
+
+</div>
+<div>
+   
+  
+  <div class="review2">
+    <h2 class="head222">Review2</h2>
+    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="rarai" alt="">
+   
+    <p class="para">
+      I am really satisfied with the quality and price of books and these books are available cheapest at sanjay book stall
+    </p>
+
+  </div>
+  <img src="https://media.wired.com/photos/5dfc0b056abd1f00080da8ac/master/w_1600%2Cc_limit/Science_BottleLies-hc-c.jpg" class="img00">
+
+
+</div>
+
+
+<div class="add">
+  <h2 class="ji">Add your review</h2>
+  <form action="/action_page.php">
+    <div class="nono">
+    <label for="fname"> Name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Review</label>:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+    <input type="submit" class="holu" value="Submit">
+  </form> 
+</div>
+</div>
+<hr class="op">
+
+<div class="footer">
+  <h2 class="head2222">SANJAY BOOK SHOP</h2>
+  <ul class="ko">
+    <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/i/flow/login?redirect_after_login=%2F" class="fa fa-twitter"></a>
+  <a href="https://www.instagram.com/" class="fa fa-instagram"></a> 
+  </ul>
+  <ul>
+  <a class="akbar" href="">Privacy Policy</a>
+  <a class="loloa" href="">Copyright</a>
+  </ul>
+<a class="opps" href="#">Top</a>
+  
+
+</div>  
+    
+
+
+
+
+
+  
+  
+   
+</body>
+</html>
